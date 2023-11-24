@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estils/estils.css">
+    <title>Minecraft:Questionari</title>
+</head>
+
+<body>
+    <header>
+        <h2>MINECRAFT</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="modes_de_joc.html">Modes de Joc</a></li>
+                <li><a href="personatges_mobs.html">Personatges Mobs</a></li>
+                <li><a href="biomes.html">Biomes</a></li>
+                <li><a class="active" href="questionari.html">Questionari</a></li>
+            </ul>
+        </nav>
+        <article>
+            <form action="gracies.html" method="get" name="formulari" id="formulari">
+                <fieldset>
+                    <legend>Dona la teva opinió</legend>
+                    <label for="modes_de_joc">Mode de Joc Preferit</label><br>
+                    <input type="radio" name="creatiu" id="amd" value="amd" checked>Creatiu<br>
+                    <input type="radio" name="surpervivencia" id="intel" value="intel">Supervivència<br>
+                    <br>
+                    <label for="placaMare">Personatge Preferit</label><br>
+                    <select id="placaMare" required>
+                        <option value="" selected>- Selecciona -</option>
+                        <option value="herobrine">Herobrine</option>
+                        <option value="steve">Steve</option>
+                        <option value="alex">Alex</option>
+                    </select><br><br>
+                    <label for="memoria">Bioma Preferit</label><br>
+                    <select id="ram" size="3" required>
+                        <option value="" selected>- Selecciona -</option>
+                        <option value="desert">Desert</option>
+                        <option value="jungla">Jungla</option>
+                        <option value="nether">Nether</option>
+                        <option value="normal">Normal</option>
+                        <option value="mar">Mar</option>
+                        <option value="sabana">Sabana</option>
+                        <option value="end">End</option>
+                        <option value="pedra_taronja">Pedra Taronja</option>
+                        <option value="champinyons">Champinyons</option>
+                    </select><br>
+                </fieldset>
+                <fieldset>
+                    <legend></legend>
+                    <button type="submit" id="submit">Enviar formulari</button>
+                    <button type="reset" id="reset">Esborrar formulari</button>
+                </fieldset>
+            </form>
+        </article>
+    </section>
+    <footer>
+        <p>Fet per: Gerard Bolet</p>
+    </footer>
+</body>
+
+</html>

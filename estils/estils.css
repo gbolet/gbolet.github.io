@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(minecraft4.jpg);
+}
+
+/* Style the header */
+header {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  text-decoration-line: underline overline;
+  font-family: 'Trebuchet MS';
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  /* height: 300px; only for demonstration, should be removed */
+
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  /*  position: fixed;
+    height: 100%;
+    overflow: auto; */
+  border: 2px dashed #000;
+}
+
+nav a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: larger;
+  font-weight: bold;
+  font-family: 'Trebuchet MS';
+  background-image: url(minecraft3.png);
+  background-size: contain;
+}
+
+nav a.active {
+
+  color: rgb(13, 15, 114);
+  font-style: oblique;
+}
+
+nav a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+article {
+  /*float: left;*/
+  padding: 20px;
+  width: 100%;
+  background-color: #f1f1f1;
+  /*height: 300px;  only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: grey;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+
+  nav,
+  article {
+    width: 100%;
+    height: auto;
+  }
+}
