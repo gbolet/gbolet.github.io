@@ -19,13 +19,13 @@ header {
 
 /* Create two columns/boxes that floats next to each other */
 nav {
-  float: left;
+  /*float: left;*/
   width: 30%;
   /* height: 300px; only for demonstration, should be removed */
 
   padding: 20px;
 }
-
+.fila img{width:650px;}
 /* Style the list inside the menu */
 nav ul {
   list-style-type: none;
